@@ -1,0 +1,39 @@
+@use '../custom';
+
+.header {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  @include custom.media-breakpoint-up(sm) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   
+  }
+
+  span {
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    width: 10rem;
+  }
+}
+
+span {
+  font-size: 2.6rem;
+  font-family: 'Open Sans', sans-serif;
+  width: 10rem;
+}
+
+.carousel-inner{
+  
+  border-radius: 5px;
+}
+
+.products-row{
+margin-top: 1rem;
+text-align: center;
+  
+img{
+    padding-bottom: 2rem;
+    
+  };
+
+}
