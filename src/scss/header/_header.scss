@@ -30,10 +30,12 @@ span {
 .products-row{
 margin-top: 1rem;
 text-align: center;
-  
+&:hover {
+  cursor: pointer;
+} 
 img{
     padding-bottom: 2rem;
     
   };
-
+  
 }

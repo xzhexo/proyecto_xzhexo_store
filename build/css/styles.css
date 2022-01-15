@@ -11148,6 +11148,9 @@ span {
   margin-top: 1rem;
   text-align: center;
 }
+.products-row:hover {
+  cursor: pointer;
+}
 .products-row img {
   padding-bottom: 2rem;
 }
