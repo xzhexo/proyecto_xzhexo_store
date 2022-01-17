@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- favicon -->
-   <link rel="shortcut icon" href="build/img/favicon.ico" type="image/x-icon">
-   <!-- fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-   <!-- css -->
-   <link rel="stylesheet" href="/build/css/styles.css">
-   <!-- fontawesome -->
-   <script src="https://kit.fontawesome.com/f6b5f5e3f8.js" crossorigin="anonymous"></script>
-   <title> xzplay - products </title>
-  
+  <!-- favicon -->
+  <link rel="shortcut icon" href="build/img/favicon.ico" type="image/x-icon">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="/build/css/styles.css">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/f6b5f5e3f8.js" crossorigin="anonymous"></script>
+  <title>xzplay</title>
 </head>
+
 <body>
-     <!-- navbar 1 -->
+  <!-- navbar 1 -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light border">
     <div class="container-lg">
       <!-- logo -->
-      <a class="navbar-brand logo" href="#">
+      <a data-bs-toggle="mensaje" title="xzhexoplay" class="navbar-brand logo"  href="index.html" >
         <img src="/build/img/logo.png" alt="logo" width="150px">
       </a>
       <!-- /logo -->
@@ -34,31 +35,39 @@
       <!-- /toggler -->
       <!-- collapse -->
       <div class="collapse navbar-collapse justify-content-end me-1 ms-1" id="navbarNav">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item">
+
+        <ul class="navbar-nav text-center  menu">
+         
+          <form class="d-flex col-5 search d-none d-lg-flex">
+            <input  data-bs-toggle="mensaje" title="Escribe el nombre del producto que deseas buscar "  class="form-control" type="search" placeholder="Busca tu producto" aria-label="Search">
+            <button data-bs-toggle="mensaje" title="Buscar" class="btn-primary text-light rounded-pill border-0 btn-outline-success p-1 me-5 ms-1" type="submit">Busqueda</button>
+          </form>
+          <li data-bs-toggle="mensaje" title="Home" class="nav-item">
             <a class="btn btn-primary rounded-circle m-1" href="index.html" role="button">
               <img src="/build/img/home-.png" alt="principal">
             </a>
           </li>
 
-          <li class="nav-item">
+          <li data-bs-toggle="mensaje" title="comprar" class="nav-item ">
             <a class="btn btn-primary rounded-circle m-1" href="products.html" role="button">
               <img src="/build/img/shopping-cart.png" alt="compra">
             </a>
           </li>
 
-          <li class="nav-item">
+          <li data-bs-toggle="mensaje" title="tiendas"  class="nav-item">
             <a class="btn btn-primary rounded-circle m-1" href="index.html#stores" role="button">
               <img src="/build/img/map.png" alt="tiendas">
             </a>
           </li>
-         
-          <li class="nav-item">
-            <a class="btn btn-primary rounded-circle m-1" href="contact.html" role="button">
+
+          <li data-bs-toggle="mensaje" title="Conocenos" class="nav-item">
+            <a class="btn btn-primary rounded-circle m-1" href="#l" role="button">
               <img src="/build/img/help.png" alt="ayuda">
             </a>
           </li>
         </ul>
+
+       
       </div>
       <!-- collapse -->
     </div>
@@ -66,28 +75,83 @@
   <!-- navbar1 -->
   <!-- secciones -->
 
-  <!--  buscar como usar los dropdown -->
+
   <section class="d-flex">
     <div class="container-lg bg-primary p-2 rounded">
       <div class="d-flex dropdown justify-content-around">
-        <!-- <div class="col-2 ">
-          <a class="text-light text-decoration-none" href="#">VideoJuegos</a>
+        <div class="col-2 ">
+          <a data-bs-toggle="mensaje" title="Ver Videojuegos"  class="text-light text-decoration-none btn btn-primary " href="products.html">VideoJuegos</a>
         </div>
         <div class="col-2">
-           <a class="text-light text-decoration-none" href="#">Consolas</a>
+          <a data-bs-toggle="mensaje" title="Ver Consolas"  class="text-light text-decoration-none btn btn-primary" href="products.html">Consolas</a>
         </div>
 
         <div class="col-2">
-          <a class="text-light text-decoration-none" href="#">Figuras</a>
-        </div> 
-        -->
-       
+          <a data-bs-toggle="mensaje" title="Ver Figuras Coleccionables"  class="text-light text-decoration-none btn btn-primary" href="products.html">Figuras</a>
+        </div>
 
+        <div class="col-2">
+          <a data-bs-toggle="mensaje" title="Ver PC Hardware" class="text-light text-decoration-none btn btn-primary" href="products.html">PC Hardware</a>
+        </div>
+        
       </div>
     </div>  
 
 
   </section>
+
+
+
+  <!-- /secciones -->
+
+  <!-- carousel -->
+  <header class="container-sm header">
+    <div class="row align-items-center">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade " data-bs-ride="carousel">
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 1"></button>
+        </div>
+        <div  data-bs-toggle="mensaje" title="Proximos Lanzamientos" class="carousel-inner">
+          <div class="carousel-item active ">
+            <img src="/build/img/horizon-fw-card.png" class="d-block w-100 rounded-3" alt="reserva uncharted">
+            <div class="carousel-caption d-none d-md-block">
+
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img src="build/img/pkmn-arc-card.png" class="d-block w-100 " alt="Pokemon arceus preventa">
+
+          </div>
+          <div class="carousel-item ">
+            <img src="build/img/elden-card.png" class="d-block w-100 " alt="Elden Ring Reserva">
+
+          </div>
+          <div class="carousel-item ">
+            <img src="build/img/kof-xv-card.png" class="d-block w-100 " alt="kof Reserva">
+
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </header>
+  <!-- /carousel -->
   
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
