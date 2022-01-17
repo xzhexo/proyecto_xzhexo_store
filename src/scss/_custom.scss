@@ -1,6 +1,7 @@
 $verde: #00a900;
 $gris: rgb(121, 140, 149);
 
+
 // asignar paleta de colores a boostrap
 
 $primary: $verde;
@@ -15,6 +16,6 @@ $heading-font-weight: 700;
 
 $card-border-color: transparent; 
 
-
+//tooltips
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
